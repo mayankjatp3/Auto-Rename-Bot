@@ -18,9 +18,9 @@ class Config(object):
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/0c3c0a72ca2785c0cf910.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5222155765').split()]
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'PubgLite_IN').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-4764707494"))
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-4764707494"))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'WarriorUnitsBots, Warrior_Units').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001987727042"))
+    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1001987727042"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))

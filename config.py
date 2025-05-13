@@ -5,8 +5,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
+    API_ID    = os.environ.get("API_ID", "23159366")
+    API_HASH  = os.environ.get("API_HASH", "4623dd30dd1303bddb729eb0862262d9")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "736532225-w") 
 
     # database config
@@ -17,10 +17,10 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/29a3acbbab9de5f45a5fe.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6497757690').split()]
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'codeflix_bots').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001868871195"))
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1001868871195"))
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5222155765').split()]
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'PubgLite_IN').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-4764707494"))
+    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-4764707494"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
